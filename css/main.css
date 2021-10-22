@@ -1,0 +1,163 @@
+:root{
+  --white: #fff;
+  --red: #e50914;
+  --black: #141414;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #A2A2A2;
+  font-family: 'Times New Roman', Times, serif;
+  color:var(--white);
+}
+header{
+  background-color: transparent;
+  height: 65px;
+  border-bottom: 1px solid red;
+
+}
+
+header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .logo{
+  width: 100%;
+  height:25px;
+  margin-left: 51px;
+}
+.container img{
+  width: 90px;
+  height: 65px;
+}
+
+nav{
+  padding-left: 40px;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+header nav a:hover{
+  color:#A2A2A2;
+}
+.second{
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 4%;
+  top: 0;
+  height: 100%;
+ 
+
+}
+.second-menu{
+  padding-top: 15px;
+  width: 200px;
+  display: flex;
+  height: 50px;
+
+ 
+}
+.icons{
+  display: flex;
+
+  
+}
+button {
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  background-color: transparent;
+  
+}
+button i{
+  color: var(--white)
+}
+.drop-down{
+  display:flex;
+  justify-content: flex-end;
+  width: 52px;
+  padding: 0;
+
+}
+.drop-down img{
+  width: 30px;
+  height: 30px;
+}
+.drop-down i{
+  margin-top: 5px;
+  margin-left: 15px;
+ 
+} 
+
+.filme-principal{
+  font-size:16px;
+  background-image:linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)100%), url('../img/goodplace.jpg');
+  height:580px;
+  background-position: center center;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+.titulo{
+  margin-top: 5%;
+  font-size:  40px;
+  font-family:'Trebuchet MS', Arial, sans-serif
+}
+.filme-principal .descricao{
+  margin-top:  10px;
+  margin-bottom: 40px;
+}
+
+
+.descricao{
+  font-size:  1.3rem;
+  text-align: justify;
+}
+.filme-principal .container{
+  width: 70%;
+}
+
+.botao{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 70px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+  transform: .5s;
+  font-size:1.3rem;
+  text-align: center;
+}
+.botao i{
+  color: black;
+  margin-right: 10px;
+}
+.botoes a {
+  text-decoration: none;
+  color: var(--black);
+}
+.botao:last-child{
+  background-color: rgba(109,109,110,0.7);
+  color: var(--white);
+  
+}
+.botao:hover{
+  background-color: rgb(118, 118, 118, 0.4)
+}
+.botao:last-child:hover{
+  background-color: rgb(118, 118, 118, 0.4);
+}
