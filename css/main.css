@@ -1,7 +1,9 @@
 :root{
-  --white: #fff;
+  --white: #e5e5e5;
   --red: #e50914;
   --black: #141414;
+  --gradient:  rgb(118, 118, 118, 0.4);
+
 }
 *{
   box-sizing: border-box;
@@ -9,7 +11,7 @@
   padding: 0;
 }
 body{
-  background: #A2A2A2;
+  background: var(--black);
   font-family: 'Times New Roman', Times, serif;
   color:var(--white);
 }
@@ -17,7 +19,6 @@ header{
   background-color: transparent;
   height: 65px;
   border-bottom: 1px solid red;
-
 }
 
 header .container{
@@ -25,11 +26,14 @@ header .container{
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+ 
 }
 header .logo{
   width: 100%;
   height:25px;
   margin-left: 51px;
+  
+  
 }
 .container img{
   width: 90px;
@@ -38,14 +42,15 @@ header .logo{
 
 nav{
   padding-left: 40px;
+  
 }
 header nav a {
   text-decoration: none;
-  color: white;
+  color:var(--white);
   margin-right: 10px;
 }
 header nav a:hover{
-  color:#A2A2A2;
+  color:var(--gradient);
 }
 .second{
   display: flex;
@@ -62,13 +67,16 @@ header nav a:hover{
   width: 200px;
   display: flex;
   height: 50px;
-
+  
  
 }
 .icons{
   display: flex;
-
+ 
   
+}
+.icons i{
+ font-size: 1.3rem;
 }
 button {
   font-size: 1.5rem;
@@ -79,7 +87,8 @@ button {
   
 }
 button i{
-  color: var(--white)
+  color: var(--white);
+ 
 }
 .drop-down{
   display:flex;
@@ -99,7 +108,7 @@ button i{
 } 
 
 .filme-principal{
-  font-size:16px;
+  font-size:1rem;
   background-image:linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)100%), url('../img/goodplace.jpg');
   height:580px;
   background-position: center center;
@@ -112,7 +121,8 @@ button i{
 }
 .titulo{
   margin-top: 5%;
-  font-size:  40px;
+  font-size:  2.5rem;
+  font-weight: 800px;
   font-family:'Trebuchet MS', Arial, sans-serif
 }
 .filme-principal .descricao{
@@ -123,16 +133,16 @@ button i{
 
 .descricao{
   font-size:  1.3rem;
-  text-align: justify;
+
 }
 .filme-principal .container{
   width: 70%;
 }
 
 .botao{
-  background-color: white;
+  background-color: var(--white);
   border: none;
-  color: black;
+  color: var(--black);
   padding: 10px 70px;
   font-weight: 700;
   border-radius: 5px;
@@ -143,7 +153,7 @@ button i{
   text-align: center;
 }
 .botao i{
-  color: black;
+  color: var(--black);
   margin-right: 10px;
 }
 .botoes a {
@@ -156,8 +166,34 @@ button i{
   
 }
 .botao:hover{
-  background-color: rgb(118, 118, 118, 0.4)
+  background-color: var(--gradient);
 }
 .botao:last-child:hover{
-  background-color: rgb(118, 118, 118, 0.4);
+  background-color: var(--gradient);
 }
+.filmes{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: -50px;
+}
+.carrosel-filmes{
+ margin-top: 20px;
+  font-size:  1.8rem;
+  font-family:'Trebuchet MS', Arial, sans-serif;
+  padding-left: 50px;
+  
+}
+.carrosel-filmes h3{
+  padding-bottom: 15px;
+}
+
+.box-filme{
+  height: 500%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+
+
